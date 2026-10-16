@@ -1,0 +1,17 @@
+{
+  "name": "inventory-management-system",
+  "version": "1.0.0",
+  "description": "Inventory Management System - HTML/CSS/JS frontend, Flask backend, SQLite database",
+  "private": true,
+  "scripts": {
+    "serve": "http-server frontend -p 5173 -c-1 --cors",
+    "format": "prettier --write \"frontend/**/*.{html,css,js}\"",
+    "check": "prettier --check \"frontend/**/*.{html,css,js}\" && node --check frontend/app.js",
+    "backend": "python backend/app.py",
+    "test": "python -m unittest discover -s backend -v"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "prettier": "^3.3.0"
+  }
+}
